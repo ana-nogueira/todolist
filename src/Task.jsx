@@ -33,10 +33,24 @@ const Task = ({ task, deleteTask, updateTask }) => {
         </>
       ) : (
         <>
-          <div className="tagContainer">
+          <div className="taskContainer">
             <form>
-              <input type="checkbox" />
-              <span style={{ color: '#fff' }}>{task}</span>
+              <input
+                type="checkbox"
+                onClick={(event) =>
+                  event.target.nextElementSibling.classList.toggle('checked')
+                }
+              />
+              <span
+                style={{
+                  color: '#fff',
+                  fontSize: '1rem',
+                  textTransform: 'uppercase',
+                }}
+                className=""
+              >
+                {task}
+              </span>
             </form>
             <div>
               <button

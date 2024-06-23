@@ -16,7 +16,7 @@ const TaskForm = ({ addTask }) => {
   };
   return (
     <div>
-      <h1 className="title">THINGS TO DO</h1>;
+      <h1 className="title">GERENCIADOR DE TAREFAS</h1>;
       <form className="editUpdateForm" onSubmit={handleSubmit}>
         <input
           className="input-style"

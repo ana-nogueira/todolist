@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
+* {
+  font-family: 'IBM Plex Mono', sans-serif;
+}
 
 body {
   background-image: url('./assets/bg.jpg');
+  background-size: cover;
   display: flex;
   height: 100vh;
   align-items: center;
@@ -16,14 +21,10 @@ h1,h2,p, ul, li {
 li {
   list-style: none;
 }
-
 .title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #fff;
 }
-
-
-
 .container-style {
   background-color: #10111c;
   padding: 20px;
@@ -67,36 +68,36 @@ outline: none;
   font-weight: bold;
 }
 
+.checked {
+  text-decoration: line-through;
+  color: #676974 !important;
+}
+
 .submitBtn {
   background-color: #D49DA1;
   border: none;
   font-size: 1rem;
   cursor: pointer;
 }
-
-.tagContainer {
+.taskContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 5px;
   padding: 10px 5px;
   border-radius: 5px;
   background-color: #191933;
 }
-
-.tagContainer form {
+.taskContainer form {
   display: flex;
   align-items: center;
   color: #fff;
   gap: 10px;
 }
-
-.tagContainer label 
+.taskContainer label 
  {
   font-size:  1.2rem;
 }
-
-
-
 .editDeleteBtn {
   font-size: .875rem;
   background-color: #191933;

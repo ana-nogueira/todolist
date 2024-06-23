@@ -12,4 +12,10 @@
   <script type="module" src="/src/Index.jsx"></script>
 </body>
 
+<script>
+  new EventSource('/esbuild').addEventListener('change', () =>
+    location.reload(),
+  );
+</script>
+
 </html>
